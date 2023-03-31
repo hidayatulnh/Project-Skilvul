@@ -1,0 +1,85 @@
+Project 1 Soal :
+Buat sebuah program yang menampilkan teks ‘User ke - 1 … User ke - 100’ pada setiap baris di halaman HTML.
+Lakukan FOR LOOP pada Javascript.
+Penjelasan : Didalam perintah tugas tersebut untuk membuat sebuah perulangan menggunakan for loop
+dan ditampilkan dihalaman HTML setiap baris dari user 1 - user 100
+pada script js yang saya buat di project 1 untuk mengawali perulangan tersebut dari angka 1 saya mengimplementasikan sebuah code for seperti berikut 
+let n = 100;
+  for (let i = 1 ; i <= n; i++) {
+    document.write("User ke- "+i+ "<br>");
+  }
+let n digunakan untuk menginialisasi kan user dan pada soal tersebut diminta 100 user
+let i = 1 digunakan untuk mengawali perulangan dari angka 1
+i <= n digunakan untuk rentang atau iterasi perulangan tersebut dari 1 sampai 100
+dan untuk menampilkan menggunakan document write saya menambahkan string didalam tersebut di ikuti oleh angka yang didapatkan dari perulangan
+
+Project 2 Soal :
+Lakukan pengulangan menggunakan FOR LOOP untuk melakukan penambahan nilai sebanyak 10 kali.
+Nilai awal = 0
+Pengulangan = 10 kali
+Nilai awal ditambah 2 setiap pengulangan
+Tampilan hasil penambahan pada setiap pengulangan
+Penjelasan code :
+for(counter = 0; counter < 20; counter+=2){
+  document.write("Perulangan ke-"+counter +"<br>");
+}
+dikarenakan perintah nilai awalnya 0 maka counter nya yang saya gunakan adalah angka/nilai 0
+dan diminta perulangannya 10 kali maka saya menggunakan angka 20 dikarenakan jika saya menggunakan angka 10 maka data yang tampil atau 
+data yang di loop sebanyak 5 saja.
+
+Project 3 Soal :
+Lakukan pengulangan dengan FOR LOOP yang melakukan iterasi dari 0..20.
+Setiap iterasi/pengulangan lakukan pengecekan apakah nilai tersebut ganjil atau genap.
+Tampilkan keterangan ganjil dan genap pada sebuah nilai setiap pengulangan
+
+Penjelasan Code :
+for(let a = 0 ; a <= 20; a++){
+     if (a % 2 == 0){
+        document.write(a +' Bilangan Genap <br>');
+     } else{
+        document.write(a +' Bilangan Ganjil <br>');
+     }
+}
+perintahnya menggunakan iterasi 0 sampai 20
+maka symbol yang saya gunakan adalah <=
+dalam penentuan genap ganjil menggunakan if else dengan bantuan perhitungan modulus
+
+Project 4 Soal:
+Tampilkan sebuah Konfirmasi Pop Up kepada user menggunakan confirm();
+Berikan teks ‘Apakah anda mau mengulang’ pada box confirm
+Jika user memilih ‘OK’ maka program akan terus menampilan pop up yang sama
+Jika user memilih ‘Cancel’ maka program akan menampilkan teks ‘Perulangan sudah dilakukan sebanyak …(jumlah klik OK yang dilakukan user)
+
+Penjelasan Code :
+var ulangi = confirm("apakah anda ingin mengulang?");
+  while (ulangi) {
+     ulangi = confirm("apakah anda ingin mengulang?");
+  }      
+menggunakan pop up confirm dan apabila user klik tombol ok maka akan menampilkan pop up yang sama
+
+Project 5 Soal:
+Buat sebuah program kuis.
+Tampilkan prompt() untuk meminta inputan dari user. Tampilan teks ‘Sebutkan kepanjangan dari nama IB (Impact Byte)?’
+Lakukan pengecekan apakah jawaban dari user sudah benar
+Jika benar, tampilkan alert ‘Selamat jawaban kamu benar’
+Jika salah, lakukan pengulangan untuk menampilkan prompt() yg sama hingga jawaban dari user benar
+
+Penjelasan Code :
+let lagi = true;
+       while (lagi) {
+        const jawaban = window.prompt('Sebutkan kepanjangan dari nama IB?');
+        if (jawaban === 'Impact Byte') {
+            window.alert('Selamat jawaban kamu benar’');
+        } else {
+            window.prompt('Sebutkan kepanjangan dari nama IB?');
+        }
+        lagi = window.confirm('Jawab Lagi?');
+        }
+menggunakan window promt untuk mengisikan jawaban
+windows alert untuk menampilkan ucapan selamat jika jawaban benar
+menggunakan if else sebagai pengecekan jawaban yang sudah di inputkan
+apabila jawaban salah maka akan menampilkan prompt soal
+
+
+
+
